@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal Profile Page of Sanjay">
+        <title>Srihitha's Profile</title>
+        <link rel="icon" href="icon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="script.js" defer></script>
+    </head>
+
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="nav-logo">
+                 
+                </a>
+                <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+            <div class="nav-menu">           
+            <!--<a href="index.html">Home</a>
+                <a href="contact.html">Contact Me</a> -->
+                <a href="resume.pdf" class="resume-button" download>Download Resume</a>
+                <div id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <img src="srihitha pic.jpg" alt="Srihitha pic">
+            <h1>Hello, I am Srihitha, a <span class="about-me"></span></h1>
+            <p>Passionate about bridging technology and user needs, I am a tech enthusiast with a robust foundation in computer science and a zeal for continuous learning.My expertise spans Java Programming, front-end and back-end development, including technologies like JavaScript, React, and Node.js. I thrive on problem-solving and innovation, aiming to contribute to projects that push technological boundaries. Eager to collaborate with like-minded teams.</p>
+        </header>
+
+        <div class="content-container">
+
+            <section>
+                <h2>My Technical Skills</h2>
+                <div class="skills-list">
+                    <ul class="skills-list">
+                        <li>Web Development</li>
+                        <li>Java Programming</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="horizontal-scroll">
+                <div class="icon-container">
+                    <img src="icon/1.png" alt="Icon 1">
+                    <img src="icon/2.png" alt="Icon 2">
+                    <img src="icon/3.png" alt="Icon 3">
+                    <img src="icon/4.png" alt="Icon 4">
+                    <img src="icon/5.webp" alt="Icon 5">
+                    
+                    <img src="icon/7.svg" alt="Icon 7">
+                    <img src="icon/8.png" alt="Icon 8">
+                    
+                    <img src="icon/10.png" alt="Icon 10">
+                </div>
+            </section>
+            <hr>
+
+            <section id="programming-languages">
+                <h2>Programming Languages</h2>
+                <div class="skill">
+                    <p>Java</p>
+                    <div class="progress-bar" data-progress="80"></div>
+                </div>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar" data-progress="90"></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar" data-progress="60"></div>
+                </div>
+                <div class="skill">
+                    <p>MERN Stack</p>
+                    <div class="progress-bar" data-progress="50"></div>
+                </div>
+            </section>
+            <hr>    
+
+            <section>
+                <h2>My Projects</h2>
+                <p>Take a look at my works.</p>
+                <section id="projects">
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-content">
+                            <img src="online auction.jpg" alt="Project 1">
+                            <h3>IconicBid</h3>
+                            <p>IconicBid is a futuristic online auction platform offering real-time bidding and premium glassmorphic UI. Built with the MERN stack, it features immersive visuals and secure user authentication.</p>
+                            <a href="#" class="btn know-more" data-modal-target="#projectModal1">Know More</a>
+                        </div>
+                    </div>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-content">
+                            <img src="img/7.webp" alt="Project 2">
+                            <h3>JobConnect</h3>
+                            <p>JobConnect is a modern job portal frontend built using React and Vite. It allows job seekers to browse and apply for jobs, and employers to post job listings.This project serves as a scalable foundation for a full-featured job portal application.</p>
+                            <a href="#" class="btn know-more" data-modal-target="#projectModal2">Know More</a>
+
+                        </div>
+                    </div>
+                                         
+            
+                   
+                </section>
+            </section>
+            <hr>
+            
+            <section>
+                <h2>Contact Me</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    </div>
+            
+                    <button type="submit">Send Message</button>                
+                </form>
+            </section>
+            <hr>
+
+            <section>
+                <h2>Contact Information</h2>
+                <p>Let's connect!</p>
+                <a href="mailto:srihithakp@gmail.com" class="icon-link email-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/paniharam-srihitha806" class="icon-link linkedin-icon"><i class="fab fa-linkedin"></i></a><br><br><br>   
+            </section>
+
+
+        </div>
+        <footer>
+            <p>&copy; 2025 Srihitha.</p>
+        </footer>
+
+
+        <!-- Project Information Modal -->
+        <!-- Project Information Modal -->
+        <div id="projectModal1" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Title: Online Auction System(IconicBid)</h2>
+                <hr>
+                <div class="modal-body">
+                    <div class="modal-row">
+                        <div class="column description">
+                            <p>Short Project Overview:</p>
+                            <p>IconicBid is a futuristic online auction platform built using the MERN stack (MongoDB, Express, React, Node.js). It offers a sleek, glassmorphic UI for a premium user experience. Users can securely register, create auctions, and place real-time bids. The platform is styled with a black and silver theme, using Bootstrap and custom CSS. Designed for elegance and performance, IconicBid brings a cinematic feel to digital bidding.</p>
+                            <a href="https://github.com/PSrihitha/auctionapp.git" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/PSrihitha/auctionapp.git">GitHub Repository</a>
+                        </div>
+                        <div class="column image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="img/1.png" alt="Project Image 1">
+                                    <img src="img/2.png" alt="Project Image 2">
+                                    <img src="img/3.png" alt="Project Image 3">
+                                    <img src="img/4.png" alt="Project Image 4">
+                                    <img src="img/5.png" alt="Project Image 5">
+                                </div>
+                                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="column">
+                            <h3>Project Details</h3>
+                            <ul>
+                                <p>Tech Stack:</p>
+                               <li> Frontend: React (with Vite), Bootstrap 5, Custom CSS, React Router</li>
+                                <li>Backend: Node.js, Express.js</li>
+                               <li> Database: MongoDB</li>
+                                <li>Authentication: JWT (JSON Web Token)</li>
+                               <li> Other Features: Axios, CORS, Glassmorphism UI, Particle Background</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Project Video</h3>
+                            <video width="445" height="250" autoplay loop muted>
+                                <source src="project1.mp4" type="video/mp4">
+                              </video>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="projectModal2" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Title: Job Portal frontend using React Vite</h2>
+                <hr>
+                <div class="modal-body">
+                    <div class="modal-row">
+                        <div class="column description">
+                            <p>Short Project Overview:</p>
+                                <p>JobConnect is a responsive and performance-optimized job portal frontend application built using React with Vite. It provides a seamless user interface for job seekers to find and apply for jobs, and for employers to post and manage job listings.
+This frontend project focuses purely on the UI and UX, with static data handling in preparation for future backend integration.</p>
+                            <a href="https://github.com/PSrihitha/jobportal.git" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/PSrihitha/jobportal.git">GitHub Repository</a>
+                        </div>
+                        <div class="column image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="img/8.png" alt="Project Image 4">
+                                    <img src="img/9.png" alt="Project Image 5">
+                                    <img src="img/10.png" alt="Project Image 6">
+                                    <img src="img/11.png" alt="Project Image 7">
+                                    <img src="img/12.png" alt="Project Image 8">
+                                    <img src="img/13.png" alt="Project Image 9">
+                                </div>
+                                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="column">
+                            <h3>Project Details</h3>
+                            <p>Tech Stack:</p>
+                            <ul>
+                                <li>React- Core library for building the user interface.</li>
+                                <li>Vite – Fast development and build tool for React projects.</li>
+                                <li>React Router DOM – Handles page navigation and routing</li>
+                                <li>React Icons – For using icons in the UI</li>
+                                <li>CSS / Bootstrap – For styling and responsive design</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Project Video</h3>
+                            <video width="445" height="250" autoplay loop muted>
+                                <source src="project2.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="projectModal3" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Project Title 3</h2>
+                <hr>
+                <div class="modal-body">
+                    <div class="modal-row">
+                        <div class="column description">
+                            <p>Short Project Overview: This project is a comprehensive exploration...</p>
+                            <a href="https://github.com/yourgithubrepo" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="column image-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="img/3.png" alt="Project Image 7">
+                                    <img src="img/2.png" alt="Project Image 8">
+                                    <img src="img/1.png" alt="Project Image 9">
+                                </div>
+                                <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                                <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="column">
+                            <h3>Project Details</h3>
+                            <ul>
+                                <li>Utilizes ROS for managing robot software components.</li>
+                                <li>Incorporates machine learning for traffic sign recognition.</li>
+                                <li>Features real-time obstacle detection using LIDAR.</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h3>Project Video</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideoid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>  
+
+    </body>
+</html>
